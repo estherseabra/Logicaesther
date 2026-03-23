@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">RPG: Criado por Joab</div>
+            <div class="card-body" id="tela" 
+                style="background-image: url('assets/fundo.jpg'); background-size: cover;">
+                <p class="card-text"> Turno 1 </p>
+                <div class="row">
+                    <div class="col text-end" id="col-heroi">
+                        <ul class="list-group float-end text-center" style="width: 225px;">
+                            <li id="nome-heroi" class="list-group-item"></li>
+                            <li id="titulo-heroi" class="list-group-item"></li>
+                            <li id="hp-heroi" class="list-group-item">
+                                ❤️ <progress id="hp-hero" value="100" max="100" style="accent-color: red;">
+                                </progress>
+                            </li>
+                            <li id="mp-heroi" class="list-group-item">
+                                🧪 <progress id="mp-hero" value="100" max="100">
+                                </progress>
+                            </li>
+                            <li id="en-heroi" class="list-group-item">
+                                ⚡ <progress id="en-hero" value="0" max="100" style="accent-color: orange;">
+                                </progress>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col" id="col-boss">
+                        <ul class="list-group float-start" style="width: 225px;">
+                            <li id="nome-boss" class="list-group-item">Aragon</li>
+                            <li id="titulo-boss" class="list-group-item">⚔️</li>
+                            <li id="hp-boss" class="list-group-item">
+                                ❤️ <progress id="hp-hero" value="100" max="100" style="accent-color: red;">
+                                </progress>
+                            </li>
+                            <li id="en-boss" class="list-group-item">
+                                ⚡ <progress id="en-hero" value="0" max="100" style="accent-color: orange;">
+                                </progress>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-end" id="col-botoes">
+                        <div>
+                            <img src="assets/hero.gif" width="200" height="200">
+                        </div>
+                        <div class="btn-group" id="controles">
+                        </div>
+                    </div>
+                    <div class="col text-start" id="col-msg">
+                        <img src="assets/chefe.gif" width="200" height="200">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer"></div>
+        </div> <!-- card -->
+    </div> <!-- container -->
+</body> <!-- body -->
+<script src="jogo.js">
+    
+</script>
+</html> <!-- html -->
